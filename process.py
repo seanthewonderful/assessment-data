@@ -11,5 +11,13 @@ def sales_reports(log_file): # Creating a function(def=defining) called sales_re
             print(line) # Print the entire line to the console.
 
 
-sales_reports(log_file) # Invoking the function with the file "log_file" as its parameter, through which this function will be able to iterate
+# sales_reports(log_file) # Invoking the function with the file "log_file" as its parameter, through which this function will be able to iterate
 
+def manyMelons(file):
+    for line in file:
+        line = line.rstrip('\n').split(' ')
+        # print(line[2])
+        if int(line[2])>10:
+            print(line)
+
+manyMelons(log_file)
