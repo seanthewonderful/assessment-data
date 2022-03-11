@@ -1,15 +1,4 @@
 
-
-
-
-
-
-
-
-CD INTO travel-journal FOLDER
-
-
-
 require('dotenv').config()
 const express = require('express')
 const app = express()
